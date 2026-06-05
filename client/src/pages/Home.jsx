@@ -65,16 +65,12 @@ const s = {
   },
 };
 
-useEffect(() => {
+function Home() {
+
+ useEffect(() => {
   console.log("Tracking Home Visit");
   _encatch.trackEvent("page_home_visited");
 }, []);
-
-function Home() {
-
-  useEffect(() => {
-    _encatch.trackEvent("page_home_visited");
-  }, []);
 
   return (
     <div style={s.hero}>
