@@ -23,7 +23,7 @@ const styles = {
   },
 };
 
-function FeedbackButton({ formId = "your-form-id" }) {
+function FeedbackButton({ formId }) {
   const handleClick = () => {
     _encatch.showForm(formId);
   };
