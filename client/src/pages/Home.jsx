@@ -65,6 +65,11 @@ const s = {
   },
 };
 
+useEffect(() => {
+  console.log("Tracking Home Visit");
+  _encatch.trackEvent("page_home_visited");
+}, []);
+
 function Home() {
 
   useEffect(() => {
