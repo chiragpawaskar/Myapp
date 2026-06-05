@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { _encatch } from "@encatch/web-sdk";
 
 const s = {
   hero: {
@@ -65,6 +66,11 @@ const s = {
 };
 
 function Home() {
+
+  useEffect(() => {
+    _encatch.trackEvent("page_home_visited");
+  }, []);
+
   return (
     <div style={s.hero}>
       <div style={s.badge}>
