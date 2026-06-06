@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 import { _encatch } from "@encatch/web-sdk";
 
-_encatch.init(process.env.REACT_APP_ENCATCH_API_KEY);
+_encatch.init(process.env.REACT_APP_ENCATCH_API_KEY,{host:"https://app.uat.encatch.com"});
 _encatch.startSession();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
