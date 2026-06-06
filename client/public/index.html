@@ -8,6 +8,28 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <script type="text/javascript">
+  window._refinerQueue = window._refinerQueue || [];
+
+  function _refiner() {
+    _refinerQueue.push(arguments);
+  }
+
+  _refiner(
+    "setProject",
+    "11f73be0-5e68-11f1-8f24-255f13880072"
+  );
+
+  (function () {
+    var a = document.createElement("script");
+    a.async = true;
+    a.src = "https://js.refiner.io/v001/client.js";
+
+    var b = document.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(a, b);
+  })();
+</script>
+    </div>
   </body>
 </html>
