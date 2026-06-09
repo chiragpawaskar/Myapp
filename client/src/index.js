@@ -6,6 +6,10 @@ import { _encatch } from "@encatch/web-sdk";
 
 _encatch.init(process.env.REACT_APP_ENCATCH_API_KEY,{apiBaseUrl: "https://app.uat.encatch.com"});
 _encatch.startSession();
+_encatch.addSourceTracking({
+  utm_source: "website",
+  utm_campaign: "react_demo"
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
